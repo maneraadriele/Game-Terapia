@@ -12,7 +12,7 @@ function setup() {
   // This sets up an event that fills the global variable "poses"
   // with an array every time new poses are detected
   poseNet.on('pose', function(results) {
-    poses = results;
+    
   });
   // Hide the video element, and just show the canvas
   video.hide();
