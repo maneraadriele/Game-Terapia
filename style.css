@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +7,18 @@
     list-style: none;
     text-decoration: none;
 }
+
+  #title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+  }
 :root{
     --red:#18aaff;
     --white:#fff;
@@ -109,6 +120,53 @@ body{
 .home-img img{
     width: 100%;
 }
+.gameLoadingPermission{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.gameLoadingPermission-text{
+    max-width: 37rem;
+}
+.gameLoadingPermission-text .text-h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: 4rem;
+    }
+.gameLoadingPermission-img img{
+    width: 60%;
+}
+.gameLoadingPermission-video video{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 70%;
+}
+canvas{
+    margin-left: 3%;
+    display: none;
+}
+.gameTruePermission{
+    width: 100%;
+    height: 20vh;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.gameTruePermission-start{
+    max-width: 37rem;
+}
+.gameTruePermission-start a {
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
 @media (max-width:785px) {
     .navigation{
         padding: 18px 20px;
@@ -162,5 +220,27 @@ body{
     }
     .home-img{
         width: 125%;
+    }
+    .gameLoadingPermission{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+    .gameLoadingPermission-text .text-h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .gameLoadingPermission-img{
+        width: 125%;
+    }
+    .gameLoadingPermission-video{
+        width: 60%;
+    }
+    .gameLoadingPermission-video video{
+        width: 40%;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 10%;
     }
 }

@@ -1,6 +1,9 @@
 let video;
 let poseNet;
 let poses = [];
+var canvas = document.querySelector('canvas');
+var gameLoadingPermission = document.querySelector('.gameLoadingPermission');
+var gameTruePermission = document.querySelector('.gameTruePermission');
 
 function setup() {
   createCanvas(640, 480);
@@ -19,7 +22,9 @@ function setup() {
 }
 
 function modelReady() {
-  select('#status').html('Model Loaded');
+  gameLoadingPermission.style.display = 'none';
+  canvas.style.display = 'inline-block';
+  gameTruePermission.style.display = 'flex';
 }
 
 function draw() {
