@@ -7,7 +7,17 @@
     list-style: none;
     text-decoration: none;
 }
-
+#nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
   #title{
     display: flex;
     align-items: center;

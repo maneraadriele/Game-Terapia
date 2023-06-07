@@ -1,12 +1,10 @@
-/*html,
+html,
 body {
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
-canvas {
-  display: block;
-}
 
 * {
   font-family: sans-serif;
@@ -24,10 +22,6 @@ header {
   line-height: 10px;
 }
 
-li {
-  display: inline-block;
-  margin: 20px;
-}
 
 a {
   color: rgb(0, 0, 0);
@@ -58,3 +52,37 @@ span {
     clear: both;
     display: table;
   }
+
+main{
+  text-align: right;
+  flex-direction: row;
+  display: flex;
+}
+
+h3{
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px;
+  box-shadow: 0 0.1rem 0.10rem #6f6f6f;
+  width: 900%;
+  background: var(--white);
+  transition: all 0.5s;
+  position: relative;
+}
+.navigation .logo{
+  color: var(--red);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+
+header img{
+  width: 70px;
+}
